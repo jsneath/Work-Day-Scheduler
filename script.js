@@ -6,3 +6,4 @@ var todaysDate = dayjs().format("dddd, MMMM Do");
 
 
 $("#currentDay").text(todaysDate);
+
