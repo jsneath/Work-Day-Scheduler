@@ -27,7 +27,9 @@ function loadSavedData() {
 
 // Call the function to load saved data
 loadSavedData();
-
+// hide save html
+var savedToStorage = document.querySelector(".savedToStorage")
+// savedToStorage.classList.add('hide');
 // if time on schedule is > current time, make green
 
 // if time on schedule is < current time, malre grey
@@ -44,6 +46,8 @@ document.querySelectorAll('.row.time-block').forEach(function(timeBlock) {
         timeBlock.classList.add('past');
     } else if (blockHour === currentHour) {
         timeBlock.classList.add('present');
+       var textArea = timeBlock.querySelector(".description")
+       textArea.value = "Current"
     } else {
         timeBlock.classList.add('future');
     }
@@ -62,5 +66,15 @@ document.querySelectorAll('.saveBtn').forEach(function(saveButton) {
 
         localStorage.setItem(id, textarea.value);
         // show saved somewhere
+        onSave()
     });
 });
+
+function onSave() {
+    
+    savedToStorage.classList.add('visible');
+
+    setTimeout(function() {
+        savedToStorage.classList.remove('visible');
+    }, 2000);
+}

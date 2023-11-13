@@ -27,6 +27,18 @@ header {
   text-align: center;
 }
 
+
+
+.savedToStorage {
+  transition: opacity 0.5s ease-out;
+  opacity: 0; /* Start invisible */
+  display: block; /* Needed for opacity transition */
+}
+
+.visible {
+  opacity: 1;
+}
+
 .highlight {
   color: red;
 }
