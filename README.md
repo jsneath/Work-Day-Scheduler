@@ -1,87 +1,37 @@
-# Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 
-## Your Task
+Welcome to the Work Day Scheduler project! This practical web application is designed to help users efficiently organize and plan their workday with an easy-to-use interface.
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Features
 
-You'll need to use the [Day.js](https://day.js.org/docs/en/display/format) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+- **Hourly Time Blocks**: The scheduler displays standard business hours, broken down into hourly blocks.
+- **Dynamic Time Awareness**: Each time block changes color based on the current time, indicating past, present, or future hours.
+- **Editable Tasks**: Users can click on a time block to enter and edit tasks or appointments.
+- **Save Functionality**: A save button next to each time block allows users to securely save their tasks.
+- **Local Storage Integration**: Tasks are saved in the browser's local storage, ensuring they persist even when the page is reloaded.
+- **Real-Time Clock Update**: The application continuously updates to reflect the current date and time.
+- **Responsive Design**: The layout is responsive, making it easy to use on various devices and screen sizes.
 
-## User Story
+## How to Use
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+1. Open the application in your web browser.
+2. Click on a time block corresponding to the desired hour.
+3. Enter a task or note in the editable field.
+4. Click the save button next to the time block to save the task.
+5. Tasks will change color based on the current time, with past hours in grey, the current hour in red, and future hours in green.
+6. Saved tasks will remain visible even after refreshing the page.
+7. Edit or update tasks as needed throughout the day.
 
-## Acceptance Criteria
+## Technologies Used
 
-The app should:
+- **HTML**: Structures the content and layout of the scheduler.
+- **CSS**: Styles the visual elements, including time blocks and buttons.
+- **JavaScript**: Implements the application logic, including time-based color coding and local storage handling.
+- **Day.js**: A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
 
-* Display the current day at the top of the calender when a user opens the planner.
- 
-* Present timeblocks for standard business hours when the user scrolls down.
- 
-* Color-code each timeblock based on past, present, and future when the timeblock is viewed.
- 
-* Allow a user to enter an event when they click a timeblock
+## Links
 
-* Save the event in local storage when the save button is clicked in that timeblock.
+Live URL: https://jsneath.github.io/Work-Day-Scheduler/
+Repository: https://github.com/jsneath/Work-Day-Scheduler
 
-* Persist events between refreshes of a page
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
-
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+![Work Day Scheduler Screenshot](workday.png)
